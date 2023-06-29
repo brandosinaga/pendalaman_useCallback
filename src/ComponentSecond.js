@@ -1,4 +1,6 @@
-function ComponentSecond({handleAddItem}){
+import { memo } from "react";
+
+const ComponentSecond = memo(function ComponentSecond({handleAddItem}){
 
 
     console.count("componentSecond")
@@ -31,7 +33,7 @@ function ComponentSecond({handleAddItem}){
                         <button type="submit">submit</button>
                 </form>)
 
-}
+})
 
 
 
