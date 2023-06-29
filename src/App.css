@@ -1,0 +1,53 @@
+*
+{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+}
+
+button
+{
+                padding: 1rem;
+                font-weight: bold;
+                cursor: pointer;
+                margin-top: 1rem;
+}
+
+div
+{
+                height: 80vh;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+           
+}
+
+
+
+form
+{
+                
+                display: flex;
+                flex-direction: column;
+
+}
+
+label {font-weight: bolder;
+}
+
+input
+{
+                width: 200px;
+                height: 30px;
+                border: 1px solid rgb(188, 188, 188);
+                border-radius: 5px;
+                margin-left: 1rem;
+}
+
+.width-half {width: 50vw;}
+
+.number {font-size: 100px;}
+
+.no-border {border: none;}
