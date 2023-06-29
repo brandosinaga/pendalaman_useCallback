@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback,useState } from "react";
 import ComponentSecond from "./ComponentSecond";
 
 export default function ComponentFirst({count, handleAddData}){
@@ -10,13 +10,10 @@ export default function ComponentFirst({count, handleAddData}){
 
         const [item, setItem] = useState([]);
 
-        // const handleAddItem = useCallback((obj) => setItem(prevItem => [{...obj, count}]),[count])
 
-        const handleAddItem = (obj) => {
+        const handleAddItem = useCallback((obj) => setItem(prevItem => [{...obj, count}]),[count])
 
-            setItem(prevItem => [{...obj, count}])
-        }
-
+    
         const handleShow = () => handleAddData(item);
 
 
